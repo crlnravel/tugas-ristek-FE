@@ -1,7 +1,7 @@
 "use client"
 
 import { Accordion, Stack } from "react-bootstrap";
-import Navigation from "@/components/Navigation";
+import Request from "@/components/Request";
 import Response from "@/components/Response";
 
 export default function page() {
@@ -13,7 +13,7 @@ export default function page() {
                         POSTGIRL
                     </h1>
                 </div>
-                <Navigation />
+                <Request />
                 <Response />
             </Stack>
         </main>

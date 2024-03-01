@@ -17,31 +17,19 @@ const Response: React.FC = () => {
     return (
         <Card>
             <Card.Header>
-                <h5 className='block p-2'>
+                <h5 className='block pt-2 px-2'>
                     Response
                 </h5>
             </Card.Header>
             <Card.Body>
-                <Tabs
-                    defaultActiveKey="profile"
-                    id="uncontrolled-tab-example"
-                    className="mb-3"
-                >
-                    <Tab eventKey="profile" title="Profile">
-                    <Form.Control
+                <Form.Control
                         as="textarea"
                         placeholder="Leave a comment here"
                         value={JSON.stringify(reponse, undefined, 4)}
                         style={{ height: '100px' }}
                         />
-                    </Tab>
-                    <Tab eventKey="body" title="Body">
-                    asdfasdf
-                    </Tab>
-                </Tabs>
-                <Card.Footer>
-                </Card.Footer>
             </Card.Body>
+            <Card.Footer></Card.Footer>
         </Card>
     );
 }
