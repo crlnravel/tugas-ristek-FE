@@ -6,14 +6,13 @@ import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import React, {useRef, useState} from "react";
-import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs"
 
-const Response: React.FC = () => {
-    const [reponse, setResponse] = useState({
-        'nasiuduk': 'lala cantik'
-    })
+interface reqElementProps {
+    response: object
+}
 
+const Response: React.FC<reqElementProps> = ({ response }) => {
     return (
         <Card>
             <Card.Header>
@@ -25,8 +24,8 @@ const Response: React.FC = () => {
                 <Form.Control
                         as="textarea"
                         placeholder="Leave a comment here"
-                        value={JSON.stringify(reponse, undefined, 4)}
-                        style={{ height: '100px' }}
+                        value={JSON.stringify(response, undefined, 4)}
+                        style={{ height: '300px', fontFamily: "monospace" }}
                         />
             </Card.Body>
             <Card.Footer></Card.Footer>
