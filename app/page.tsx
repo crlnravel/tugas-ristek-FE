@@ -7,7 +7,7 @@ import {useState} from "react";
 
 export default function page() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [response, setResponse] = useState<object>()
+    const [response, setResponse] = useState<object>({})
 
     return (
         <main className="container-fluid p-5">
