@@ -23,7 +23,7 @@ const Response: React.FC<reqElementProps> = ({ response }) => {
             <Card.Body>
                 <Form.Control
                         as="textarea"
-                        placeholder="Leave a comment here"
+                        placeholder="The response will be shown here."
                         value={JSON.stringify(response, undefined, 4)}
                         style={{ height: '300px', fontFamily: "monospace" }}
                         />

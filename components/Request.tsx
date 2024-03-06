@@ -80,6 +80,7 @@ const Request: React.FC<reqElementProps> = ({ setResponse }) => {
                         <Tab eventKey="body" title="Body" className='p-4'>
                             <Form.Control
                                 as="textarea"
+                                placeholder="Put your request body over here."
                                 ref={bodyRef}
                                 onKeyDown={e => {if (e.key == "Tab") {e.preventDefault(); bodyRef.current.value = bodyRef.current.value + "    ";}}}
                                 style={{ height: '100px', fontFamily: "monospace" }}
